@@ -1,0 +1,107 @@
+.header{
+    background: url('../images/untitled9.png') no-repeat top;
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.header__inner {
+    padding-top: 55px;
+    padding-bottom: 43px;
+    border-bottom: 1px solid rgba(188, 179, 179, 0.3);
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__list-item + .menu__list-item {
+    margin-left: 60px;
+}
+.menu__list-link {
+    font-size: 17px;
+    font-weight: bold;
+    color: #828282;
+    text-transform: uppercase;
+}
+.menu__list-link.active{
+    padding-bottom: 63px;
+    border-bottom: 1px solid #d84333;
+    color: $white;
+}
+
+.header__contact-phone {
+    font-size: 20px;
+    font-weight: bold;
+    color: $white;
+}
+.header__contact-btn {
+    width: 245px;
+    margin-left: 49px;
+    padding: 19px 30px 18px 31px;
+    background-color: transparent;
+    background-image: linear-gradient(255deg, rgba(230, 44, 43, 0.15) 93%, rgba(230, 44, 43, 0.05) 1%);;
+    font-size: 17px;
+    font-weight: 900;
+    color: #e62c2b;
+    border: solid 2px #e62c2b;
+}
+.header__box{
+    width: 428px;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+.header__title {
+    margin-bottom: 14px;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 4.79px;
+    color: $grey;
+    line-height: 0.8;
+}
+.header__title span{
+    font-size: 47px;
+    line-height: 1.23;
+}
+.header__subtitle {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2.65px;
+    color: $grey;
+}
+
+.about {
+    padding-top: 200px;
+}
+.about__inner {
+    padding-bottom: 50px;
+    max-width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    background-color: #181819;
+    right: 0;
+}
+
+.about__content {
+    width: 690px;
+    padding-left: 122px;
+   
+}
+.about__content-title {
+    padding-top: 100px;
+    margin-bottom: 35px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.about__content-text {
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: $grey;
+}

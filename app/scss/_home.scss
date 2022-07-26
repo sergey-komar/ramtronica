@@ -5,9 +5,9 @@
 }
 
 .slider__inner-wrapper{
-    width: 365px;
-    margin-left:10px;
-    margin-right: 10px;
+   width: 400px;
+   margin-left: auto;
+   margin-right: auto;
 }
 .slick-prev-btn{
     width: 98px;
@@ -35,8 +35,7 @@
     background: url('../images/untitled7.png') no-repeat center;
     background-size: cover;
 }
-.container {
-}
+
 .connection__box {
     max-width: 502px;
     margin-left: auto; 
@@ -83,3 +82,299 @@
     color: #e62c2b;
     background-image:linear-gradient(256deg, rgba(230, 44, 43, 0.15) 93%, rgba(230, 44, 43, 0.05) 1%);;
 }
+
+.certificates {
+    padding-top: 140px;
+    background-color: #1a1a1b;
+    padding-bottom: 190px;
+}
+.certificates__title{
+    margin-bottom: 90px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.certificates__inner-wrapper{
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.nav-icon{
+    width: 35px;
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+.nav-icon__middle{
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: transparent;
+    transition: all .2s ease-in;
+}
+.nav-icon__middle::after,
+.nav-icon__middle::before{
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 3px;
+    background-color: $white;
+}
+.nav-icon__middle::after{
+    bottom: 4px;
+    transition: all .2s ease-in;
+}
+.nav-icon__middle::before{
+    top: 4px;
+    transition: all .2s ease-in;
+}
+
+.nav-icon.nav-icon--active .nav-icon__middle{
+    background-color: transparent;
+    transition: all .2s ease-in;
+}
+.nav-icon.nav-icon--active .nav-icon__middle::after{
+    transform: rotate(45deg);
+    bottom: 0;
+    transition: all .2s ease-in;
+}
+.nav-icon.nav-icon--active .nav-icon__middle::before{
+    transform: rotate(-45deg);
+    top: 0; 
+    transition: all .2s ease-in;
+}
+.slick-dots{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.slick-dots li{
+    margin-left: 10px;
+}
+.slick-dots li button{
+    width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e62c2b;
+    font-size: 0;
+    padding: 0;
+}
+ li.slick-active button{
+    background-color: #fff;
+}
+
+
+
+
+@media(max-width:1310px){
+    .header__contact-phone {
+        display: none;
+    }
+    .menu__list-item+.menu__list-item {
+        margin-left: 16px;
+    }
+}
+@media(max-width:1210px){
+   
+    .slick-prev-btn {
+        display: none !important;
+    }
+}
+
+@media(max-width:1110px){
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #181819;
+        right: 0;;
+        left: 0;
+        top: 0;
+        transition: all .4s ease-in;
+        transform: translateX(-100%);
+        z-index: 9;
+    }
+    .menu.nav--active{
+        transform: translateX(0);
+    }
+    .nav-icon{
+        display: block;
+    }
+    .menu__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px !important;
+    }
+    .menu__list-item + .menu__list-item{
+        margin-left: 0px;
+    }
+    .menu__list-item{
+        margin-bottom: 40px;
+    }
+    .menu__list-link.active{
+        border-bottom: none;
+    }
+    .logo{
+        position: relative;
+        z-index: 10;
+    }
+}
+@media(max-width:800px){
+    .certificates__inner {
+        flex-wrap: wrap;
+    }
+    .about__content{
+        padding-left: 0;
+        width: 100%;
+    }
+    .connection__box {
+         max-width: 100%; 
+         margin-left: 0; 
+         margin-right: 0; 
+    }
+    .footer__menu-item{
+        
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:550px){
+    .footer__menu{
+        flex-direction: column;
+    }
+    .header__inner{
+        padding-top: 25px;
+    }
+    .footer__menu-item + .footer__menu-item{
+        margin-left: 0;
+    }
+    .footer__inner{
+        flex-direction: column;
+        border-top: none;
+    }
+    .footer__menu{
+        margin-top: 30px;
+    }
+    .footer__copyright{
+        margin-right: auto;
+    }
+    .header__contact{
+        display: none;
+    }
+    .header__box {
+        max-width: 428px;
+        margin-top: 100%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .header__title{
+        font-size: 30px;
+        text-align: center;
+    }
+    .header__title span{
+        margin-top: 10px;
+        font-size: 18px; 
+    }
+    .header__subtitle{
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .about__content-title {
+        padding-top: 16px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .about__content-text{
+        font-size: 16px;
+    }
+    .slider__title{
+        padding-top: 0px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 24px;
+    }
+    .slider{
+        padding-bottom: 25px;
+    }
+    .certificates{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .certificates__title {
+        margin-bottom: 15px;
+         margin-left: 0px; 
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .certificates__inner .slick-dots{
+        margin-top: -40px;
+    }
+    .connection{
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+    .connection__box-title{
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .footer{
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+    .form{
+        padding: 30px 30px;
+    }
+    .header__inner{
+        border-bottom: none;
+    }
+    .form__input{
+        height: 50px;
+    }
+    .form__input::placeholder{
+        font-size: 16px;
+    }
+    .form__btn{
+        padding: 0;
+        height: 50px;
+        font-size: 16px;
+    }
+    .about{
+        padding-top: 100px;
+    }
+    .header{
+        background: url('../images/bg-mobile.png') top;
+    }
+    .menu__list{
+        margin-top: 160px;
+    }
+    .header__contact.header__contact--mobile{
+        display: block;  
+    }
+    .header__contact-btn{
+        margin-left: 0;
+    }
+    .header__contact-phone.header__contact-phone--mobile{
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .footer__copyright.footer__copyright--mobile{
+        display: block;
+        text-align: center;
+        margin-top: 90px;
+    }
+    .slider__inner-wrapper{
+        width: unset;
+    }
+    
+}
+

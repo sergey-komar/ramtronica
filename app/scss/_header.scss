@@ -40,6 +40,9 @@
     font-weight: bold;
     color: $white;
 }
+.header__contact.header__contact--mobile{
+    display: none;
+}
 .header__contact-btn {
     width: 245px;
     margin-left: 49px;
@@ -52,7 +55,7 @@
     border: solid 2px #e62c2b;
 }
 .header__box{
-    width: 428px;
+    max-width: 428px;
     margin-top: 250px;
     margin-left: 100px;
 }
@@ -74,7 +77,9 @@
     letter-spacing: 2.65px;
     color: $grey;
 }
-
+.footer__copyright.footer__copyright--mobile{
+    display: none;
+}
 .about {
     padding-top: 200px;
 }

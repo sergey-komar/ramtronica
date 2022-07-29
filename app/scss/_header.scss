@@ -81,7 +81,7 @@
     display: none;
 }
 .about {
-    padding-top: 200px;
+    padding-top: 550px;
 }
 .about__inner {
     padding-bottom: 50px;
@@ -109,4 +109,45 @@
     font-weight: 500;
     line-height: 1.33;
     color: $grey;
+}
+.about__content-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    display: none;
+    color: #e62c2b;
+}
+
+
+
+
+
+
+.slider-top {
+    position: relative;
+    background-color:#F5F5F5;
+}
+
+.slider__row {
+    display: flex;
+}
+.slider__row-box {
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 500px;
+}
+.slider__row-title {
+    margin-bottom: 60px;
+}
+.slider__row-text {
+    margin-bottom: 60px;
+}
+
+.slider__wrapper {
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 10;
 }

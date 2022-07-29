@@ -19,13 +19,10 @@ $(function () {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: true,
-               
+                centerMode: true,
               }
             },
             
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
           ]
     });
 $('.certificates__inner').slick({
@@ -52,10 +49,12 @@ $('.certificates__inner').slick({
           }
         },
         
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
+})
+
+$('.slider__top-inner').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
 })
 
     const menu = document.querySelector('.menu');
@@ -64,5 +63,10 @@ $('.certificates__inner').slick({
     mobile.addEventListener('click', function(){
     this.classList.toggle('nav-icon--active');
     menu.classList.toggle('nav--active');
+});
+
+
+$('.about__content-btn').on('click', function(){
+  $('.about__content-text--mobile').slideToggle();
 });
 })
